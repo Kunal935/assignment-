@@ -24,19 +24,19 @@ docker pull rasa/rasa:latest
 ### **Step 3: Initialize the Project**
 Replace `[your file path]` with the actual path where you want to store the bot files.
 ```sh
-docker run -it --rm -v [your file path]:/app rasa/rasa:latest init --no-prompt
+docker run -it --rm -v "[your file path]":/app rasa/rasa:latest init --no-prompt
 ```
 
 ### **Step 4: Train the Model**
 Once the project is initialized, train the chatbot:
 ```sh
-docker run -it --rm -v [your file path]:/app rasa/rasa:latest train
+docker run -it --rm -v "[your file path]":/app rasa/rasa:latest train
 ```
 
 ### **Step 5: Run the Chatbot**
 After training completes, start the chatbot:
 ```sh
-docker run -it --rm -v [your file path]:/app rasa/rasa:latest shell
+docker run -it --rm -v "[your file path]":/app rasa/rasa:latest shell
 ```
 
 ---
