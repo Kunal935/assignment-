@@ -1,0 +1,88 @@
+version: "3.1"
+
+intents:
+  - greet
+  - goodbye
+  - affirm
+  - deny
+  - mood_great
+  - mood_unhappy
+  - bot_challenge
+  - get_recipe
+  - get_recipe_1
+  - get_recipe_2
+
+entities:
+  - recipe_name
+
+slots:
+  recipe_name:
+    type: text
+    mappings:
+      - type: from_entity
+        entity: recipe_name
+
+responses:
+  utter_greet:
+  - text: "Hey! How are you?"
+
+  utter_cheer_up:
+  - text: "Here is something to cheer you up:"
+    image: "https://i.imgur.com/nGF1K8f.jpg"
+
+  utter_did_that_help:
+  - text: "Did that help you?"
+
+  utter_happy:
+  - text: "Great, carry on!"
+
+  utter_goodbye:
+  - text: "Bye"
+
+  utter_iamabot:
+  - text: "I am a bot, powered by Rasa."
+
+  utter_fetch_recipe:
+  - text: |
+      **Paneer Butter Masala:**
+      
+      **Ingredients:**  
+      Paneer, butter, cream, tomatoes, cashew paste, garlic, ginger, garam masala, red chili powder, turmeric, salt.
+      
+      **Instructions:**  
+      1. Lightly fry paneer cubes until golden.  
+      2. Sauté garlic and ginger in butter, then add tomato puree and cashew paste with spices.  
+      3. Simmer and add paneer and cream.  
+      4. Cook on low heat until flavors meld.  
+      5. Serve with naan or rice.
+
+  utter_fetch_recipe_1:
+  - text: |
+      **Chicken Biryani:**
+      
+      **Ingredients:**  
+      Basmati rice, chicken, yogurt, onions, tomatoes, saffron, turmeric, garam masala, cumin, coriander, mint, coriander.
+      
+      **Instructions:**  
+      1. Marinate chicken in yogurt and spices.  
+      2. Fry onions until crispy.  
+      3. Drizzle saffron-infused milk, cover tightly, and cook on low heat (dum) until done.  
+      4. Garnish with mint and fried onions.  
+
+  utter_fetch_recipe_2:
+  - text: |
+      **Chole bhature:**
+      
+      **Ingredients:**  
+      Chickpeas, onions, tomatoes, ginger, garlic, cumin, coriander, amchur, garam masala; for bhature: flour, yogurt, baking powder.
+      
+      **Instructions:**  
+      1. Soak chickpeas overnight and pressure cook until tender.  
+      2. Prepare a spicy gravy with onions, ginger, garlic, and spices; add tomatoes and simmer with chickpeas.  
+      3. For bhature, knead flour with yogurt and baking powder, roll out, and deep-fry until puffed and golden.  
+      4. Serve together hot.  
+
+ 
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true

@@ -1,0 +1,13 @@
+Issues with Rasa
+1.Initially, I tried using a large dataset (~13K rows), but Rasa's server failed to connect properly.
+  To resolve this, I switched to a static approach, but then actions.py stopped working.
+
+2.Finally, I simplified the project to work with only three sample dishes:
+
+  Paneer Butter Masala
+
+  Chicken Biryani
+
+  Chole Bhature
+
+  I hope this version works smoothly without errors.

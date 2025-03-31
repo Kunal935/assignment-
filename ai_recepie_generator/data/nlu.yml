@@ -1,0 +1,113 @@
+version: "3.1"
+
+nlu:
+- intent: greet
+  examples: |
+    - hey
+    - hello
+    - hi
+    - hello there
+    - good morning
+    - good evening
+    - moin
+    - hey there
+    - let's go
+    - hey dude
+    - goodmorning
+    - goodevening
+    - good afternoon
+
+- intent: goodbye
+  examples: |
+    - cu
+    - good by
+    - cee you later
+    - good night
+    - bye
+    - goodbye
+    - have a nice day
+    - see you around
+    - bye bye
+    - see you later
+
+- intent: affirm
+  examples: |
+    - yes
+    - y
+    - indeed
+    - of course
+    - that sounds good
+    - correct
+
+- intent: deny
+  examples: |
+    - no
+    - n
+    - never
+    - I don't think so
+    - don't like that
+    - no way
+    - not really
+
+- intent: mood_great
+  examples: |
+    - perfect
+    - great
+    - amazing
+    - feeling like a king
+    - wonderful
+    - I am feeling very good
+    - I am great
+    - I am amazing
+    - I am going to save the world
+    - super stoked
+    - extremely good
+    - so so perfect
+    - so good
+    - so perfect
+
+- intent: mood_unhappy
+  examples: |
+    - my day was horrible
+    - I am sad
+    - I don't feel very well
+    - I am disappointed
+    - super sad
+    - I'm so sad
+    - sad
+    - very sad
+    - unhappy
+    - not good
+    - not very good
+    - extremly sad
+    - so saad
+    - so sad
+
+- intent: bot_challenge
+  examples: |
+    - are you a bot?
+    - are you a human?
+    - am I talking to a bot?
+    - am I talking to a human?
+
+- intent: get_recipe
+  examples: |
+    - Tell me the recipe for [Paneer Butter Masala](recipe_name)
+    - How do I make [Paneer Butter Masala](recipe_name)?
+    - I want to cook [Paneer Butter Masala](recipe_name), guide me.
+    - Show me the recipe for [Paneer Butter Masala](recipe_name).
+
+- intent: get_recipe_1
+  examples: |
+    - Tell me the recipe for [chicken biryani](recipe_name)
+    - How do I make [chicken biryani](recipe_name)?
+    - I want to cook [chicken biryani](recipe_name), guide me.
+    - Show me the recipe for [chicken biryani](recipe_name).
+
+- intent: get_recipe_2
+  examples: |
+    - Tell me the recipe for [Chole bhature](recipe_name)
+    - How do I make [Chole bhature](recipe_name)?
+    - I want to cook [Chole bhature](recipe_name), guide me.
+    - Show me the recipe for [Chole bhature](recipe_name).
+
